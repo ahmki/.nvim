@@ -9,7 +9,7 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-	use { "ellisonleao/gruvbox.nvim" }
+	use { "luisiacc/gruvbox-baby" }
 
 	use {
 		'nvim-treesitter/nvim-treesitter',
@@ -41,14 +41,7 @@ return require('packer').startup(function(use)
 
 	use('tpope/vim-fugitive')
 	use('tpope/vim-commentary')
+    use { "nvim-telescope/telescope-file-browser.nvim" }
 
-	use {
-		'nvim-tree/nvim-tree.lua',
-		requires = {
-			'nvim-tree/nvim-web-devicons', -- optional, for file icons
-		},
-		tag = 'nightly' -- optional, updated every week. (see issue #1193)
-	}
-	
 end)
 
